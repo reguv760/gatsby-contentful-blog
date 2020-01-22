@@ -1,3 +1,13 @@
+const dotenv = require("dotenv")
+
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config()
+}
+
+//space ID: yu63zdke7r1g
+//content delivery api access token: 5kU4AOUuug-WW05TMQjzHeWFG-qNcSNXPUmr0h1XzuA
+//content Preview api access token: F9rGecRYH9M-s9b81kYQyZHFffRAavJsc6WZR78d2O4
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Blog`,
@@ -71,6 +81,13 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `yu63zdke7r1g`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
