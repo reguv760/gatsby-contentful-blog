@@ -5,6 +5,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 module.exports = {
+  pathPrefix: "/gatsby-contentful-blog",
   siteMetadata: {
     title: `Gatsby Starter Blog with Contentful`,
     author: `Reggie Galang`,
