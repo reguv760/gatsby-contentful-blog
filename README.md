@@ -1,4 +1,4 @@
-This is a working gatsby-starter-blog "boilerplate" of Gatsby + Contentful using CodingTheSmartWay.com's [Youtube Tutorial](https://www.youtube.com/watch?v=fY3mBJSDA44).
+This is a working gatsby-starter-blog "boilerplate" of Gatsby + Contentful using a combination of CodingTheSmartWay.com's [Youtube Tutorial](https://www.youtube.com/watch?v=fY3mBJSDA44) and [Dave Kensell's](https://alligator.io/gatsbyjs/gatsby-contentful-netlify/) tutorial that uses similar structure from Gatsby's contentful starter package (gatsby-contentful-starter)
 
 This includes updated implementation of Contentful's Rich Text (as of 1/22/20)
 

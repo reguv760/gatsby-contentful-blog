@@ -1,7 +1,11 @@
-const dotenv = require("dotenv")
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
-if (process.env.NODE_ENV !== "production") {
-  dotenv.config()
+const contentfulConfig = {
+  spaceId: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  host: process.env.CONTENTFUL_HOST,
 }
 
 module.exports = {
@@ -80,8 +84,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `yu63zdke7r1g`,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: contentfulConfig.spaceId,
+        accessToken: contentfulConfig.accessToken,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
