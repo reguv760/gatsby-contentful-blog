@@ -1,16 +1,24 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's blog starter
-</h1>
+This is a working gatsby-starter-blog "boilerplate" of Gatsby + Contentful using CodingTheSmartWay.com's [Youtube Tutorial](https://www.youtube.com/watch?v=fY3mBJSDA44).
 
-Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This includes updated implementation of Contentful's Rich Text (as of 1/22/20)
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## Features
+
+### 1. styled components: store CSS rules as a constant to apply in JSX component
+
+    `npm install styled-components`
+
+### 2. gatsby-source-contentful: main plugin that connects Gatsby with Contentful
+
+    `npm install gatsby-source-contentful`
+
+### 3. @contentful/rich-text-react-renderer: Rich Text renderer to display HTML properly from Contentful's Rich-Text field
+
+    `npm install @contentful/rich-text-react-renderer`
+
+### 4. dotenv: Load environment variables from a .env file into process.env; prevents "secure data" from being exposed in production
+
+    `npm install dotenv`
 
 ## 🚀 Quick start
 
