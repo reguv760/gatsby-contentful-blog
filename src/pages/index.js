@@ -32,7 +32,8 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        {posts.map(({ node }) => {
+        {//load posts from contentful
+        posts.map(({ node }) => {
           const title = node.title || node.slug
           return (
             <Post key={node.slug}>
@@ -51,7 +52,6 @@ class BlogIndex extends React.Component {
                     {title}
                   </Link>
                 </h3>
-                {/* <small>{node.frontmatter.date}</small> */}
                 <p>{node.subtitle}</p>
               </PostText>
             </Post>

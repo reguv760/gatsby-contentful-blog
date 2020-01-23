@@ -9,10 +9,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
+//this is the template used by contentful "post"
 class BlogPostContentfulTemplate extends React.Component {
   render() {
     const post = this.props.data.contentfulPost
     const siteTitle = this.props.data.site.siteMetadata.title
+
+    //this is destructured from gatsby-node.js
     const { previous, next } = this.props.pageContext
 
     return (
