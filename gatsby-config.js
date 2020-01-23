@@ -4,19 +4,13 @@ if (process.env.NODE_ENV !== "production") {
   dotenv.config()
 }
 
-//space ID: yu63zdke7r1g
-//content delivery api access token: 5kU4AOUuug-WW05TMQjzHeWFG-qNcSNXPUmr0h1XzuA
-//content Preview api access token: F9rGecRYH9M-s9b81kYQyZHFffRAavJsc6WZR78d2O4
-
 module.exports = {
+  pathPrefix: "/gatsby-contentful-blog",
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
+    title: `Gatsby Starter Blog with Contentful`,
+    author: `Reggie Galang`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
-    social: {
-      twitter: `kylemathews`,
-    },
   },
   plugins: [
     {
