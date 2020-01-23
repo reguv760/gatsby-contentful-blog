@@ -2,7 +2,17 @@ This is a working gatsby-starter-blog "boilerplate" of Gatsby + Contentful using
 
 This includes updated implementation of Contentful's Rich Text (as of 1/22/20)
 
+Demo: [https://gatsby-contentful-rg.netlify.com/](https://gatsby-contentful-rg.netlify.com/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3dcd8c7b-2e16-40a3-892e-b0dd52490345/deploy-status)](https://app.netlify.com/sites/gatsby-contentful-rg/deploys)
+
 ## Features
+
+This is a static website built with Gatsby JS using Contentful's CMS to power "content" for a blog. Site is also deployed using Netlify's cloud hosting.
+
+This "boilerplate" can be update content using
+a) Contentful's CMS or
+b) Manually editing the code through an editor
 
 ### 1. styled components: store CSS rules as a constant to apply in JSX component
 
