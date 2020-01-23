@@ -10,7 +10,7 @@ Demo: [https://gatsby-contentful-rg.netlify.com/](https://gatsby-contentful-rg.n
 
 This is a static website built with Gatsby JS using Contentful's CMS to power "content" for a blog. Site is also deployed using Netlify's cloud hosting.
 
-This "boilerplate" can be update content using
+This "boilerplate" can update content using
 a) Contentful's CMS or
 b) Manually editing the code through an editor
 

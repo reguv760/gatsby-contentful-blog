@@ -8,6 +8,14 @@ const contentfulConfig = {
   host: process.env.CONTENTFUL_HOST,
 }
 
+const { spaceId, accessToken } = contentfulConfig
+
+if (!spaceId || !accessToken) {
+  throw new Error(
+    "Contentful spaceId and the access token need to be provided."
+  )
+}
+
 module.exports = {
   pathPrefix: "/gatsby-contentful-blog",
   siteMetadata: {
@@ -17,13 +25,6 @@ module.exports = {
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
   },
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
